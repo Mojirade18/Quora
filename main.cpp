@@ -10,7 +10,7 @@ double subtract(double num1, double num2) {
     return num1 - num2;
 }
 
-// Function to multiply two numbers
+// Function to multiply two numbers OF HOW TO BE GOOD
 double multiply(double num1, double num2) {
     return num1 * num2;
 }
