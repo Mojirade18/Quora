@@ -29,6 +29,7 @@ int main() {
     else {
         cout << "Invalid input.";
     }
+    continue;
     cout << "1) Do you want to add a new quote? " << "\n";
     cout << "2) Do you want to delete the most recent quote you added? " << "\n";
     cout << "3) Do you want to edit your most recent qoute?\n";
@@ -44,16 +45,17 @@ int main() {
         }
         case 2: {
             quotes.pop_back();
-            for (int i = 0; i < uotes.size(); i++){
+            for (int i = 0; i < quotes.size(); i++){
                 cout << quotes[i];
             }
             break;
         }
         case 3:{
             cout << "Type in the quote again: ";
-            cin >> new_quote;
+            getline(cin, new_quote);
             quotes.pop_back();
             quotes.push_back (new_quote);
+            //This shows the last item in the vector
             cout << quotes.back();
             break; 
         }
