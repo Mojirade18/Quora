@@ -1,3 +1,5 @@
+import random
+
 def main():
     quotes = ["The sky is your limit.",
         "Everyone can advise, but only you woukld live the consequence."
